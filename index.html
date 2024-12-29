@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Exclusive Content</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            user-select: none; /* Mencegah pemilihan teks */
+        }
+        header {
+            background-color: #ff0077;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .hero {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 3em 1em;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 1.5em;
+        }
+        .cta {
+            margin: 1em 0;
+        }
+        .cta a {
+            text-decoration: none;
+            background-color: #ff0077;
+            color: white;
+            padding: 1em 2em;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+        .cta a:hover {
+            background-color: #d60063;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            background-color: #000000;
+            padding: 2em 1em;
+            flex-wrap: wrap;
+        }
+        .feature {
+            flex: 1 1 calc(33% - 1em);
+            margin: 0.5em;
+            background-color: #e8e8e8;
+            padding: 1.5em;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .feature img {
+            width: 100%;
+            height: auto;
+            transform: scale(1);
+            transition: transform 0.3s, opacity 0.3s;
+            opacity: 0.9;
+        }
+        .feature:hover img {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+        .feature h3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5em 1em;
+        }
+
+        /* Mencegah klik kanan pada gambar */
+        img {
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Join Exclusive Content</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Don't Miss Out!</h2>
+        <p>Sign up now for access to exclusive photos, videos, and more.</p>
+        <div class="cta">
+            <a href="#" onclick="randomLink()">Join Now</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature" onclick="randomLink()">
+            <img src="bg1.jpg" alt="Exclusive Photos">
+            <h3>Exclusive Photos</h3>
+        </div>
+        <div class="feature" onclick="randomLink()">
+            <img src="bg2.jpg" alt="Private Videos">
+            <h3>Private Videos</h3>
+        </div>
+        <div class="feature" onclick="randomLink()">
+            <img src="bg3.jpg" alt="Interactive Chat">
+            <h3>Interactive Chat</h3>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+
+    <script>
+        function randomLink() {
+            const links = [
+                "https://xtwphrh.mysweet-contactstimes.com/g2t2cdv?t=NARUTO&cid=UCIHA",
+                "https://vnanxl.llovesgreat.com/?utm_source=da57dc555e50572d&&ban=inst&j1=1&s1=226805&s2=2083622&s3=NARUTO&click_id=KAGEBUNSHIN",
+                "https://xtwphrh.mysweet-contactstimes.com/g2t2cdv?t=NARUTO&cid=UJIHA",
+                "https://vnanxl.llovesgreat.com/?utm_source=da57dc555e50572d&&ban=inst&j1=1&s1=226805&s2=2083622&s3=NARUTO&click_id=KAGEBUNSHIN"
+            ];
+            const randomIndex = Math.floor(Math.random() * links.length);
+            window.location.href = links[randomIndex];
+        }
+
+        // Mencegah klik kanan pada halaman
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Mencegah salin teks
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+        });
+
+        // Mencegah membuka developer tools (DevTools) dengan beberapa cara
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123) { // F12
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) { // Ctrl+Shift+I
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 85) { // Ctrl+U
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
